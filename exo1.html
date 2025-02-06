@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function presenter(nom,age,passion,maison) {
+            
+            if (typeof(age)=="number") {
+                console.log(`Je m'appelle ${(`${nom.charAt(0).toUpperCase()}${nom.slice(1)}`)}, j'ai ${age} ans, je suis passionné du ${passion}, j'habitte au quartier ${maison}`);
+                
+            } else {
+                console.log("erreur, entrer un nombre");
+                
+                
+            }
+        }
+        presenter("zefori", 20,"leture","arafath")
+    </script>
+</body>
+</html>
