@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Animal{
+            //Attribut
+            PATTE = 4
+            couleur;
+            taille;
+            forme;
+            //Methodes
+            aboyer(intru) {
+                console.log(`gbo gbo ${intru}`);
+         
+            }
+            mordre(voleur) {
+                console.log(`j'ai mordu le voleur:${voleur}`);
+                
+            }
+            fuire(inconnue) {
+                console.log(`il a fuit`);
+                
+            }
+            //constructeur
+            constructor(couleurParam,tailleParam,formeParam){
+                this.PATTE=4
+                this.couleur = couleurParam;
+                this.taille = tailleParam;
+                this.forme = formeParam;
+            }
+        }
+        let chien = new Animal('black',1.25,'arrondu')
+        console.log(chien.couleur);
+        console.log(chien.taille);
+        console.log(chien.forme);
+        chien.aboyer= 'ali'
+        
+        
+        
+
+    </script>
+</body>
+</html>
